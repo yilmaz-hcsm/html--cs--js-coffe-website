@@ -1,0 +1,1059 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+ :root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.analogo img {
+    height: 30rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+.header {
+    background: black;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+.anasayfa {
+    min-height: 100vh;
+    display: flex;
+    background: url(../images/anasayfaarkaplan.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.icerik {
+    margin-top: 200px;
+}
+
+.anasayfa .content {
+    max-width: 60rem;
+}
+
+.anasayfa .icerik h3 {
+    font-size: 5rem;
+    word-spacing: 20px;
+    text-transform: none;
+    color: white;
+    font-family: 'Smooch', cursive;
+}
+
+.first-latter {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 15rem;
+    color: var(--main-color);
+}
+
+.anasayfa .icerik p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.ensevilen .heading {
+    margin-bottom: 50px;
+}
+
+.ensevilen {
+    margin-top: 200px;
+}
+
+.ensevilen .box-container .box:hover {
+    background-color: var(--main-color);
+}
+
+.ensevilen .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.ensevilen .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+    ;
+    margin-bottom: 500px;
+}
+
+.ensevilen .box-container .box .image {
+    padding: 2.5rem 0;
+}
+
+.ensevilen .box-container .box .image img {
+    height: 25rem;
+}
+
+.ensevilen .box-container .box .content h3 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.ensevilen .box-container .box .content .stars {
+    padding: 1.5rem;
+}
+
+.ensevilen .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.ensevilen .box-container .box .content .price {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.ensvilen .box-container .box .content .price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.kampanya .heading {
+    margin-bottom: 50px;
+}
+
+.kampanya .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.kampanya .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.kampanya .box-container .box img {
+    height: 10rem;
+}
+
+.kampanya .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.kampanya .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.kampanya .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.kampanya .box-container .box:hover {
+    background: #fff;
+}
+
+.kampanya .box-container .box:hover>* {
+    color: var(--black);
+}
+
+.kampanya {
+    margin-bottom: 500px;
+}
+
+.onerilen .heading {
+    margin-bottom: 50px;
+}
+
+.onerilen .kutu {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.onerilen .kutu .image {
+    margin-top: 30px;
+    flex: 1 1 -10rem;
+}
+
+.onerilen .kutu .image img {
+    width: 100%;
+}
+
+.onerilen .kutu .content {
+    flex: 1 1 5rem;
+    padding: 10rem;
+}
+
+.onerilen .kutu .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.onerilen .kutu .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.onerilen {
+    margin-bottom: 500px;
+}
+
+.son {
+    background: var(--black);
+    text-align: center;
+    z-index: 9999;
+   
+}
+
+.son.sosyal {
+    padding: 1rem 0;
+    
+}
+
+.son .sosyal a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.son .sosyal a:hover {
+    background-color: var(--main-color);
+}
+
+.son .linkler {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.son .linkler a {
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.son .linkler a:hover {
+    background: var(--main-color);
+}
+
+.son .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.son .credit span {
+    color: var(--main-color);
+}
+
+.about {
+    background: url(../images/hakkimizda.png) no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.about .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin-bottom: 300px;
+}
+
+.about .content h3 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.about .heading {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.haberler {
+    background: url(../images/haberler.png) no-repeat;
+}
+
+.haberler .heading {
+    margin-top: 200px;
+    margin-bottom: 100PX;
+}
+
+.haberler .kutu {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.haberler .kutu .image {
+    margin-top: 30px;
+    flex: 1 1 -10rem;
+}
+
+.haberler .kutu .image img {
+    width: 100%;
+}
+
+.haberler .kutu .content {
+    flex: 1 1 5rem;
+    padding: 10rem;
+}
+
+.haberler .kutu .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.haberler .kutu .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.iletişim .heading {
+    margin-top: 120px;
+}
+
+.iletişim {
+    background: url(../images/haberler.png) no-repeat;
+}
+
+.iletişim .kontakt {
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 200px;
+}
+
+.iletişim .kontakt .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.iletişim .kontakt form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.iletişim .kontakt form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.iletişim .kontakt form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.iletişim .kontakt form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.iletişim .kontakt form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+.iletişim .kutular {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+.iletişim .kutular .kutu1 {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.iletişim .kutular .kutu1 h3 {
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem 0;
+    margin-bottom: 20px;
+}
+
+.iletişim .kutular .kutu1 .yazilar {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    text-transform: lowercase;
+}
+
+.iletişim .kutular .kutu1 .simgeler {
+    color: red;
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+.iletişim .kutular .kutu1:hover {
+    background: #fff;
+}
+
+.iletişim .kutular .kutu1:hover>* {
+    color: var(--black);
+}
+
+.girisyaphepsi {
+    background: url(../images/haberler.png) no-repeat;
+}
+
+.girisyap {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 0px;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.girisyap form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.giriskutu {
+    width: 550px;
+    height: 430px;
+    background-color: transparent;
+    margin: auto;
+    position: fixed;
+    margin-top: 250px;
+    margin-left: 530px;
+    position: absolute;
+
+   
+}
+
+.girisyaphepsi .girisyap .giriskutu input[type="email_giris"],
+input[type="password"] {
+    width: 500px;
+    height: 50px;
+    margin-left: 20%;
+    margin-right: -20%;
+    position: relative;
+    top: 62px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: medium;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.girisyap .giriskutu .heading {
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -82px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.girisyap .giriskutu input[type="submit"] {
+    width: 500px;
+    margin-top: 90px;
+    margin-left: 110px;
+}
+
+.girisyap .giriskutu .giriş_link {
+    margin-left: 200px;
+}
+
+.uyeolhepsi {
+    background: url(../images/haberler.png) no-repeat;
+    
+    
+ 
+}
+
+.uyeol {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 300px;
+    
+}
+
+.uyekutu {
+    width: 550px;
+    height: 430px;
+    background-color: transparent;
+    margin: auto;
+    position: fixed;
+    margin-top: 170px;
+    margin-left: 560px;
+    position: absolute;
+
+   
+}
+
+.uyeolhepsi .uyeol .uyekutu input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+   
+    width: 500px;
+    height: 50px;
+    margin-left: 20%;
+    margin-right: -20%;
+    position:relative;
+    top: 62px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: medium;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-transform: lowercase;
+}
+
+.uyeol .uyekutu .heading {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -50x;
+}
+
+.input[type="submit"] {
+    width: 500px;
+    position: fixed;
+    margin-top: 150px;
+    margin-left: -190px;
+}
+
+.uyeol .uyekutu [type="submit"] {
+    margin-top: 90px;
+    margin-left: 80px;
+   
+}
+
+.giriş_link {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin-top: 25px;
+    margin-left: 155px;
+}
+
+.giriş_link a {
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.giriş_link a:hover {
+    text-decoration: underline;
+}
+
+#login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#login-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+}
+
+#error-msg-second-line {
+    display: block;
+}
+
+#login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-form-field::placeholder {
+    color: #3a3a3a;
+}
+
+.login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #261911;
+    cursor: pointer;
+    outline: none;
+}
+
+.profil {
+    background: url(../images/haberler.png) no-repeat;
+}
+
+.kartlar {
+    margin-top: 1000px;
+}
+
+.flip-card1 {
+    position: absolute;
+    margin-top: -800px;
+    margin-left: 650px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card2 {
+    position: absolute;
+    margin-top: -800px;
+    margin-left: 100px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card3 {
+    position: absolute;
+    margin-top: -800px;
+    margin-left: 1200px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card4 {
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 100px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card5 {
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 650px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card6 {
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 1200px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card1:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card4:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card5:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card6:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    background-color: var(--main-color);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+    margin-top: 70px;
+    font-size: 2rem;
+}
+
+.flip-card-back p {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.profil .heading {
+    margin-top: 150px;
+}
+
+.boslukk {
+    margin-top: 180px;
+    margin-right: 40px;
+}
+
+.baslikkk {
+    margin-left: 630px;
+    margin-top: 100px;
+    color: #d3ad7f;
+    margin-bottom: 50px;
+}
+
+.ustkisim .box a {
+    color: white;
+}
+
+.ustkisim .box h1 {
+    color: white;
+}
+
+.ustkisim .box {
+    position: fixed;
+    margin-left: -130px;
+    margin-top: -150px;
+    width: 300px;
+    height: 500x;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    text-align: center;
+}
+
+.urunkerimiz .onerilen .kutu {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 80px;
+}
+
+.urunlerimiz .onerilen .kutu image {
+    width: 200px;
+    height: 200px;
+}
+
+.ustkisim .box ul {
+    font-size: 20px;
+    color: white;
+}
+
+.tarifresmi {
+    margin-left: 200px;
+}
+
+.tarifyazi {
+    margin-top: -250px;
+    margin-left: 650px;
+}
+
+.tarifyazi p {
+    color: white;
+    font-size: 20px;
+}
+
+.urunler .heading {
+    margin-bottom: 50px;
+}
+
+.urunler ul {
+    font-size: 20px;
+    color: white;
+}
+
+.urunler {
+    margin-top: 200px;
+    margin-left: 180px;
+}
+
+.urunler .box-container .box:hover {
+    background-color: var(--main-color);
+}
+
+.urunler .box-container {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.urunler .box-container .box {
+    width: 200px;
+    height: 340px;
+    text-align: center;
+    border: var(--border);
+    margin-bottom: 80px;
+    margin: 70px;
+}
+
+.urunler .box-container .box .image {
+    margin-right: 10px;
+}
+
+.urunler .box-container .box .image img {
+    height: 180px;
+}
+
+.urunler .box-container .box .content h3 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.urunler .box-container .box .content .price {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.vr {
+    border-left: 5px solid wheat;
+    height: 12646px;
+    margin-top: 100px;
+    position: absolute;
+    left: 18%;
+    margin-left: -25px;
+    top: 0;
+}
+
+.ustkisim .box .btn {
+    width: 200px
+}
