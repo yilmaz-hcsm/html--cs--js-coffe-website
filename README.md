@@ -1,5 +1,5 @@
 # html--cs--js-coffe-website
-html css js kullanarak örnek kahve sitesi yaptım (2. sınıf proje)
+html css js kullanarak örnek kahve sitesi yaptık (2. sınıf proje)
 
 ANA SAYFA
 ![image](https://github.com/yilmaz-hcsm/html--cs--js-coffe-website/assets/77545489/4c29a22d-ab36-41a0-9375-1baae5b86dad)
